@@ -1,0 +1,10 @@
+List of functionalities:
+1.Drop down for language selection
+2.Re-form the sentence
+3.Check the correctness of this sentence
+4.Get Correct Sentence
+5.Hide the correct Sentence
+
+List of functionalities that are to be added:
+1.New sentence
+2.Back button to put only one word back.
