@@ -1,0 +1,24 @@
+select{
+
+
+text-align:center;
+display: block;
+margin: 0 auto ;
+}
+
+#p1{
+margin-top:100px;
+text-align:center;
+font-size:25px;
+color:#000099;
+
+}
+
+#p2{
+margin-top:-20px;
+text-align:center;
+color:blue;
+font-size:25px;
+font-style: italic;
+
+}
