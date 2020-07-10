@@ -4,15 +4,18 @@
 <link rel="stylesheet" href="home.css">
 <title>Virtual Labs</title>
 <script type="text/javascript" src="home.js"  ></script>
-<script type="text/javascript" src="sentences.js" ></script>
+
+<script src="jquery-3.5.1.min.js"></script>
+<script>
+</script>
 </head>
-<body>
+<body onload="mn()">
 
 
 
 
 <h1>Experiment</h1>
-<select name="language" id="language">
+<select name="language" id="language" onchange="select()"">
     
   <option value="---Select Language---">
 ---Select Language---
@@ -22,11 +25,11 @@
 
 </select>
 
-<p id="p1">Form a sentence (Declarative or Interrogative or any other type ) from given words</p>
-<p id="p2" >(select the words in proper order)</p>
-<button type="submit" onclick="hello()" value="Submit">submit</button>
+<p id="p1" hidden>Form a sentence (Declarative or Interrogative or any other type ) from given words</p>
+<p id="p2" hidden>(select the words in proper order)</p>
+<button >submit</button>
 </body>
-<div id="virat"></div>
+<div id="pri"></div>
 </html>
 
 
