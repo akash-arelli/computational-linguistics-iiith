@@ -41,3 +41,72 @@ function mn(){
 }
 
 
+
+
+function randomall(){
+
+var obj=document.getElementById("language").value;
+
+if(obj=="English")
+{
+    
+  
+         var no=Math.floor(Math.random() * 10) + 1;
+     
+        var str=english[no].a;
+          var total = str.split(" ").length;
+ 
+              var no1=Math.floor(Math.random() * total) + 1;
+      
+               
+
+var result = str.split(" ").sort(function() {
+    return 0.4 - Math.random()
+});
+  
+   document.getElementById("new").innerHTML="";
+   for(var i=0;i<result.length;i++){
+       
+ var x = document.createElement("BUTTON");
+  var t = document.createTextNode(result[i]);
+  x.appendChild(t);
+    var element = document.getElementById("new");
+   element.appendChild(x);
+              
+}
+        
+}
+else if (obj=="Hindi")
+{
+
+  
+           var no=Math.floor(Math.random() * 7) + 1;
+    
+        var str=hindi[no].a;
+          var total = str.split(" ").length;
+ 
+              var no1=Math.floor(Math.random() * total) + 1;
+             
+               
+
+var result = str.split(" ").sort(function() {
+    return 0.4 - Math.random()
+});
+ 
+   
+   document.getElementById("new").innerHTML="";
+   
+   for(var i=0;i<result.length;i++){
+       
+ var x = document.createElement("BUTTON");
+  var t = document.createTextNode(result[i]);
+  x.appendChild(t);
+
+ var element1 = document.getElementById("new");
+   element1.appendChild(x);
+              
+}
+  
+}
+
+}

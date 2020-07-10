@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+ <meta charset="UTF-8">
 <link rel="stylesheet" href="home.css">
 <title>Virtual Labs</title>
 <script type="text/javascript" src="home.js"  ></script>
@@ -15,7 +16,7 @@
 
 
 <h1>Experiment</h1>
-<select name="language" id="language" onchange="select()"">
+<select name="language" id="language" onchange="randomall()">
     
   <option value="---Select Language---">
 ---Select Language---
@@ -27,9 +28,11 @@
 
 <p id="p1" hidden>Form a sentence (Declarative or Interrogative or any other type ) from given words</p>
 <p id="p2" hidden>(select the words in proper order)</p>
-<button >submit</button>
+
 </body>
 <div id="pri"></div>
+
+<div id="new"></div>
 </html>
 
 
