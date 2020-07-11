@@ -23,8 +23,41 @@ font-style: italic;
 
 }
 
+
+
+#pri{
+
+text-align:center;
+
+}
+
 #new{
 
 text-align:center;
 margin-top:20px;
+}
+
+
+#new1{
+margin-top:20px;
+text-align:center;
+color:blue;
+font-size:25px;
+
+
+}
+
+#new2{
+margin-top:20px;
+text-align:center;
+
+font-size:25px;
+
+
+}
+
+#myspan{
+
+font-style: italic;
+
 }

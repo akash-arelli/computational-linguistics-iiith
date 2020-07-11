@@ -65,6 +65,7 @@ var result = str.split(" ").sort(function() {
 });
   
    document.getElementById("new").innerHTML="";
+     document.getElementById("new2").innerHTML="";
    for(var i=0;i<result.length;i++){
        
  var x = document.createElement("BUTTON");
@@ -74,6 +75,42 @@ var result = str.split(" ").sort(function() {
    element.appendChild(x);
               
 }
+
+
+var c=document.getElementById("new").childNodes;
+
+var g = document.getElementById('new');
+for (var i = 0, len = g.children.length; i < len; i++)
+{
+
+    (function(index){
+        g.children[i].onclick = function(){
+         $("#new1").show();
+         $("#myspan").show();
+        $(c[index]).hide();
+          var node = document.createElement("string");
+          var k=c[index].textContent;
+          var spa=" "; 
+  var textnode = document.createTextNode(k+" ");
+  node.appendChild(textnode);
+  var element1=document.getElementById("new2");
+  element1.appendChild(node);
+        var button = document.createElement("button");
+       
+       document.getElementById('new3').innerHTML="Re-form the sentence";
+    document.getElementById('new3').style.marginLeft="650px";
+     document.getElementById('new3').style.marginTop="20px";
+   $("#new3").show();
+              
+        }    
+    })(i);
+    
+    
+    
+
+}
+
+
         
 }
 else if (obj=="Hindi")
@@ -95,6 +132,7 @@ var result = str.split(" ").sort(function() {
  
    
    document.getElementById("new").innerHTML="";
+    document.getElementById("new2").innerHTML="";
    
    for(var i=0;i<result.length;i++){
        
@@ -105,8 +143,41 @@ var result = str.split(" ").sort(function() {
  var element1 = document.getElementById("new");
    element1.appendChild(x);
               
-}
-  
-}
+               }
+  var c=document.getElementById("new").childNodes;
+ 
+var g = document.getElementById('new');
+for (var i = 0, len = g.children.length; i < len; i++)
+{
+
+    (function(index){
+        g.children[i].onclick = function(){
+         
+          $("#new1").show();
+            $("#myspan").show();
+        $(c[index]).hide();
+          var node = document.createElement("string");
+          var k=c[index].textContent;
+          var spa=" "; 
+  var textnode = document.createTextNode(k+" ");
+  node.appendChild(textnode);
+  var element1=document.getElementById("new2");
+  element1.appendChild(node);
+             var button = document.createElement("button");
+       
+       document.getElementById('new3').innerHTML="Re-form the sentence";
+    document.getElementById('new3').style.marginLeft="650px";
+     document.getElementById('new3').style.marginTop="20px";
+   $("#new3").show();
+ 
+              
+        }    
+    })(i);
 
 }
+
+
+   }
+
+}
+
