@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
- <meta charset="UTF-8">
-<link rel="stylesheet" href="home.css">
-<title>Virtual Labs</title>
-<script type="text/javascript" src="home.js"  ></script>
+<head >
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="home.css">
+    <title>Virtual Labs</title>
+    <script type="text/javascript" src="home.js"  ></script>
 
-<script src="jquery-3.5.1.min.js"></script>
-<script>
-</script>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+    </script>
 </head>
 <body onload="mn()">
 
 
 
-
 <h1>Experiment</h1>
 <select name="language" id="language" onchange="randomall()">
-    
-  <option value="---Select Language---">
----Select Language---
-</option>
-  <option value="English">English</option>
-  <option value="Hindi">Hindi</option>
+
+    <option value="---Select Language---">
+        ---Select Language---
+    </option>
+    <option value="English">English</option>
+    <option value="Hindi">Hindi</option>
 
 </select>
 
@@ -32,11 +31,12 @@
 </body>
 <div id="pri"></div>
 
+
 <div id="new"></div>
 <div id="new1" hidden>Formed Sentence <span id="myspan" hidden> (after selecting words):</span></div>
-<div id="new2"></div>
-<button id="new3" hidden></button>
+<div id="new2" onload="start()"></div>
+<button id="new3" onclick="vanish()" hidden></button>
+<div id="new4"></div>
 </html>
-
 
 
