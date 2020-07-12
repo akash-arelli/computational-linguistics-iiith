@@ -1,63 +1,68 @@
 select{
 
 
-text-align:center;
-display: block;
-margin: 0 auto ;
+    text-align:center;
+    display: block;
+    margin: 0 auto ;
 }
 
 #p1{
-margin-top:100px;
-text-align:center;
-font-size:25px;
-color:#000099;
+    margin-top:100px;
+    text-align:center;
+    font-size:25px;
+    color:#000099;
 
 }
 
 #p2{
-margin-top:-20px;
-text-align:center;
-color:blue;
-font-size:25px;
-font-style: italic;
+    margin-top:-20px;
+    text-align:center;
+    color:blue;
+    font-size:25px;
+    font-style: italic;
 
 }
-
 
 
 #pri{
 
-text-align:center;
+    text-align:center;
 
 }
+
 
 #new{
 
-text-align:center;
-margin-top:20px;
+    text-align:center;
+    margin-top:20px;
 }
 
-
 #new1{
-margin-top:20px;
-text-align:center;
-color:blue;
-font-size:25px;
+    margin-top:20px;
+    text-align:center;
+    color:blue;
+    font-size:25px;
 
 
 }
 
 #new2{
-margin-top:20px;
-text-align:center;
+    margin-top:20px;
+    text-align:center;
 
-font-size:25px;
+    font-size:25px;
 
 
 }
 
 #myspan{
 
-font-style: italic;
+    font-style: italic;
 
+}
+#new5{
+
+    margin-top:20px;
+    text-align:center;
+    margin-left: 600px;
 }

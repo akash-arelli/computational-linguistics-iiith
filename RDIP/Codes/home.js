@@ -73,7 +73,7 @@ function randomall(){
 
         }
         c=document.getElementById("new").childNodes;
-
+        var para=0;
         var g = document.getElementById('new');
         for (var i = 0, len = g.children.length; i < len; i++)
         {
@@ -90,12 +90,16 @@ function randomall(){
                     node.appendChild(textnode);
                     var element1=document.getElementById("new2");
                     element1.appendChild(node);
-
+                    para++;
 
                     document.getElementById('new3').innerHTML="Re-form the sentence";
                     document.getElementById('new3').style.marginLeft="650px";
                     document.getElementById('new3').style.marginTop="20px";
                     $("#new3").show();
+                    if(para==len)
+                    {
+                        $("#new5").show();
+                    }
 
                 }
             })(i);
@@ -107,6 +111,7 @@ function randomall(){
 
 
     }
+
     else if (obj=="Hindi")
     {
 
@@ -139,7 +144,7 @@ function randomall(){
 
         }
         c=document.getElementById("new").childNodes;
-
+        var para=0;
         var g = document.getElementById('new');
         for (var i = 0, len = g.children.length; i < len; i++)
         {
@@ -157,13 +162,16 @@ function randomall(){
                     node.appendChild(textnode);
                     var element1=document.getElementById("new2");
                     element1.appendChild(node);
-
+                    para++;
 
                     document.getElementById('new3').innerHTML="Re-form the sentence";
                     document.getElementById('new3').style.marginLeft="650px";
                     document.getElementById('new3').style.marginTop="20px";
                     $("#new3").show();
-
+                    if(para==len)
+                    {
+                        $("#new5").show();
+                    }
 
                 }
             })(i);
@@ -182,9 +190,10 @@ function vanish(){
     $("#new1").hide();
     $("#new2").hide();
     $("#new3").hide();
+    $("#new5").hide();
     for(var i=0;i<c.length;i++)
         $(c[i]).show();
-
+    var para=0;
     document.getElementById("new2").innerHTML = "";
     var g = document.getElementById('new');
     for (var i = 0, len = g.children.length; i < len; i++) {
@@ -201,7 +210,7 @@ function vanish(){
                 node.appendChild(textnode);
                 var element1 = document.getElementById("new2");
                 element1.appendChild(node);
-
+                para++;
 
                 document.getElementById('new3').innerHTML = "Re-form the sentence";
                 document.getElementById('new3').style.marginLeft = "650px";
@@ -209,11 +218,13 @@ function vanish(){
                 $("#new3").show();
 
                 $("#new2").show();
+                if(para==len)
+                {
+                    $("#new5").show();
+                }
             }
         })(i);
     }
 
 
-
 }
-        
