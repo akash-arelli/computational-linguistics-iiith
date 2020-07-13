@@ -255,5 +255,23 @@ function check() {
         document.getElementById("new6").style.color="red";
     }
     document.getElementById("new6").innerHTML =str ;
+    if(str=="Wrong answer!!!")
+    {
+        $("#new7").show();
+        $("#new7").click(function() {
+
+            var lable = $("#new7").text().trim();
+
+            if(lable == "Hide the correct Sentence") {
+                $("#new7").text("Get Answers");
+
+            }
+            else {
+                $("#new7").text("Hide the correct Sentence");
+
+            }
+
+        });
+    }
 
 }
