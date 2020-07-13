@@ -15,7 +15,7 @@
 
 
 <h1>Experiment</h1>
-<select name="language" id="language" onchange="randomall()">
+<select name="language" id="language" onchange="randomall()" >
 
     <option value="---Select Language---">
         ---Select Language---
@@ -34,10 +34,11 @@
 
 <div id="new"></div>
 <div id="new1" hidden>Formed Sentence <span id="myspan" hidden> (after selecting words):</span></div>
-<div id="new2" onload="start()"></div>
+<p id="new2" onload="start()"></p>
 <button id="new3" onclick="vanish()" hidden></button>
 <div id="new4"></div>
-<button id="new5"  hidden>Check the correctness of this sentence</button>
+<button id="new5"  onclick="check()" hidden>Check the correctness of this sentence</button>
+<div id="new6"></div>
 </html>
 
 
